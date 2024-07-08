@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notificas",
+  "info": {
+    "singularName": "notifica",
+    "pluralName": "notificas",
+    "displayName": "Notifica",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Notifica": {
+      "type": "string"
+    },
+    "dataNotifica": {
+      "type": "datetime"
+    }
+  }
+}

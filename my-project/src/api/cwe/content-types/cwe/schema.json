@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cwes",
+  "info": {
+    "singularName": "cwe",
+    "pluralName": "cwes",
+    "displayName": "CWE"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Codice": {
+      "type": "string"
+    },
+    "Descrizione": {
+      "type": "text"
+    },
+    "patterns": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::pattern.pattern",
+      "mappedBy": "cwes"
+    }
+  }
+}

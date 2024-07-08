@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "isos",
+  "info": {
+    "singularName": "iso",
+    "pluralName": "isos",
+    "displayName": "ISO",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Iso": {
+      "type": "string"
+    },
+    "patterns": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::pattern.pattern",
+      "mappedBy": "isos"
+    },
+    "numero": {
+      "type": "decimal"
+    }
+  }
+}

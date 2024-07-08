@@ -1,0 +1,45 @@
+{
+  "kind": "collectionType",
+  "collectionName": "singola_ricercas",
+  "info": {
+    "singularName": "singola-ricerca",
+    "pluralName": "singola-ricercas",
+    "displayName": "singolaRicerca",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "dataRicerca": {
+      "type": "datetime"
+    },
+    "testoRicerca": {
+      "type": "string"
+    },
+    "user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "singola_ricercas"
+    },
+    "ricercaEffettuata": {
+      "type": "enumeration",
+      "enum": [
+        "ArticoliGDPR",
+        "CWE",
+        "ISO",
+        "MVC",
+        "OWASP",
+        "Pattern",
+        "PBD",
+        "Strategia",
+        "Tutti"
+      ]
+    },
+    "Username": {
+      "type": "string"
+    }
+  }
+}

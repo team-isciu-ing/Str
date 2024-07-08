@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "pbds",
+  "info": {
+    "singularName": "pbd",
+    "pluralName": "pbds",
+    "displayName": "PBD",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NomePBD": {
+      "type": "string"
+    },
+    "patterns": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::pattern.pattern",
+      "mappedBy": "pbds"
+    }
+  }
+}
